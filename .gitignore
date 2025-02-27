@@ -1,3 +1,8 @@
 /venv
 /clean_data.csv
 .DS_Store
+
+# Ignore content in data/, /models, and /metrics which will be stored via DVC
+/data
+/models
+/metrics
