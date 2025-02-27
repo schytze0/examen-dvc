@@ -22,7 +22,7 @@ def data_normalization():
     pd.DataFrame(X_train_scaled).to_csv(f"{PROCESSED_DATA_DIR}/X_train_scaled.csv", index=False)
     pd.DataFrame(X_test_scaled).to_csv(f"{PROCESSED_DATA_DIR}/X_test_scaled.csv", index=False)
 
-    joblib.dump(scaler, f"{MODELS_DIR}/scaler.pkl")
+    # joblib.dump(scaler, f"{MODELS_DIR}/scaler.pkl")
 
     print("Saved normalized data in:", PROCESSED_DATA_DIR)
 
